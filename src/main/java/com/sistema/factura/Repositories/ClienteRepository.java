@@ -1,0 +1,13 @@
+package com.sistema.factura.Repositories;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.sistema.factura.Entities.Cliente;
+
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
+    
+    Optional<Cliente> buscarPorCedula(String cedula);
+    
+}
