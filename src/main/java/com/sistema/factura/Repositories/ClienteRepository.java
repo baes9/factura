@@ -8,6 +8,6 @@ import com.sistema.factura.Entities.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     
-    Optional<Cliente> buscarPorCedula(String cedula);
+    Optional<Cliente> findByCedula(String cedula);
     
 }

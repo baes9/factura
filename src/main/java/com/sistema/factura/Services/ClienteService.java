@@ -32,6 +32,6 @@ public class ClienteService {
     }
 
     public Optional<Cliente> buscarClientePorCedula(String cedula) {
-        return clienteRepository.buscarPorCedula(cedula);
+        return clienteRepository.findByCedula(cedula);
     }
 }
